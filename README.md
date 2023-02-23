@@ -1,4 +1,4 @@
-# HoneyBot - A HoneyPort Discord Bot
+# HoneyPort-Bot - A HoneyPort Discord Bot
 
 ## This is designed as an early detection system for home network intrusion  
 It will open port 22 (the default SSH port) and listen for connections.  If the port gets scanned or a SSH connection is attempted it will log it and alert you through a discord direct message from the bot.  Included in the bot are a command to restart it, a command to view the current logs, and a command to clear the log file.  Upon clearing logs you will be sent a confirmation notification that the logs have been cleared to their last entry.  
