@@ -1,0 +1,15 @@
+version: "3"
+services:
+  HoneyBot:
+    container_name: HoneyBot
+    build: .
+    image: honeybot/beta:v1
+    volumes:
+      - ./bot/:/bot
+## Set "TOKEN=,GUILD=,USER=" in 
+## "secret.env" file
+    env_file:
+      - secret.env
+    ports:
+      - "22:22"
+    restart: unless-stopped
