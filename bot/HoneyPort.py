@@ -24,6 +24,8 @@ if port==22:
 	welcome="\r\nWelcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-128-generic x86_64)\r\n\r\n"
 	prompt="pi@raspberry:~ $"
 #####################################################
+if "logs" not in os.listdir("./"): os.mkdir("logs")
+#####################################################
 logging.basicConfig(
     format='> **%(levelname)s** - %(message)s```',
     level=logging.INFO,

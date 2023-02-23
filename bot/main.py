@@ -4,8 +4,11 @@ from mymods import MyCord,LoopMod
 
 ##################################################
 port=22
-os.popen(f"python HoneyPort.py -p {port}") ; print(f"Listener Started on {port}")
-while "HoneyPort.log" not in os.listdir("./logs"):
+os.popen(f"python HoneyPort.py -p {port}") 
+print(f"Listener Started on {port}")
+##################################################
+if "logs" not in os.listdir("./"): os.mkdir("logs")
+while "HoneyPort.log" not in os.listdir("./logs"): 
 	asyncio.run(asyncio.sleep(1))
 ##################################################
 ##################################################
