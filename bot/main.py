@@ -50,6 +50,7 @@ client = MyClient() ; tree = client.tree
 @client.event
 async def on_ready():
 	await client.MyTasks.start_tasks()
+	print(f"#####  discord.py v{discord.__version__}  #####")
 	print(f'Logged in as {client.user} On {len(client.guilds)} servers')
 	print("##########################################")
 ##################################################
